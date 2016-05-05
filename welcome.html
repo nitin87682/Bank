@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="bankApp">
 <head>
     <title>Cap Bank</title>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app/app.js"></script><!-- Controller -->
 </head>
 <body>
 
@@ -45,7 +46,7 @@
                 </div>
                 <div>
 
-                    <button type="submit" class="btn btn-info">Submit</button>
+                    <a ui-sref=".transaction" class="btn btn-primary" type="submit"> Submit </a>
                 </div>
             </form>
         </div>
