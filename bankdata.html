@@ -1,0 +1,60 @@
+
+
+
+
+<form action="successTransaction" method="post">
+
+    <input type="hidden" name="userName" value=<%=userName %>>
+
+    <input type="hidden" name="bpassword" value="${bankAccount.bankPassword}">
+    <table>
+        <tbody>
+
+
+        <tr>
+            <td>Welcome</td>
+        </tr>
+        <tr>
+            <td>Account Holder First Name</td>
+            <td><%=request.getParameter("firstname")%></td>
+
+        </tr>
+        <tr>
+            <td>Account Holder Last Name</td>
+            <td><%=request.getParameter("lastname")%></td>
+
+        </tr>
+        <tr>
+            <td>Account Number</td>
+            <td><%=request.getParameter("accountnum")%></td>
+
+        </tr>
+        <tr>
+            <td>Account Balance</td>
+            <td><%=request.getParameter("availbalance")%></td>
+
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><%=request.getParameter("amount")%></td>
+        </tr>
+        <!--  <tr>
+              <td>New Account Balance</td>
+              <td><%=request.getParameter("newavailbalance")%></td>
+              </tr> -->
+        <tr>
+            <td><input type="checkbox" name="iAgree" value="iAgree"> I have a bike<br></td>
+        </tr>
+        <tr>
+            <td><button type="submit"  value="Submit"> Submit</button></td>
+            <td><button type="submit"  value="Cancel">Cancel</button></td>
+        </tr>
+        <tbody>
+    </table>
+
+
+</form>
+
+<div>
+</div>
+
